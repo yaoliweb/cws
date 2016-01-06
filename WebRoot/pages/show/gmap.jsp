@@ -229,7 +229,7 @@ function go(){
 		   		}
 		   		}%>
 		   		<% 
-			   		if(shorttitle.equals(session.getAttribute("shortTitle")))
+			   		if(shorttitle.equals(session.getAttribute("shortTitle")) || operationnum.equals(session.getAttribute("shortTitle")))
 			   		{
 		   		%>
 		   			image = "http://www.google.cn/intl/en_us/mapfiles/ms/micons/purple-dot.png";
