@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/project/!svn/ver/66/CWS/src/cn/zj/sunda/water/dao/impl
+END
+SewageDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/project/!svn/ver/112/CWS/src/cn/zj/sunda/water/dao/impl/SewageDaoImpl.java
+END
+BugDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/project/!svn/ver/81/CWS/src/cn/zj/sunda/water/dao/impl/BugDaoImpl.java
+END
+UserDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/project/!svn/ver/44/CWS/src/cn/zj/sunda/water/dao/impl/UserDaoImpl.java
+END
+RunDataDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/project/!svn/ver/53/CWS/src/cn/zj/sunda/water/dao/impl/RunDataDaoImpl.java
+END
+SysparamDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/project/!svn/ver/66/CWS/src/cn/zj/sunda/water/dao/impl/SysparamDaoImpl.java
+END
+RoleDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/project/!svn/ver/8/CWS/src/cn/zj/sunda/water/dao/impl/RoleDaoImpl.java
+END
+DayCollectDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/project/!svn/ver/51/CWS/src/cn/zj/sunda/water/dao/impl/DayCollectDaoImpl.java
+END
+MenuDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/project/!svn/ver/8/CWS/src/cn/zj/sunda/water/dao/impl/MenuDaoImpl.java
+END
+MessagesDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/project/!svn/ver/66/CWS/src/cn/zj/sunda/water/dao/impl/MessagesDaoImpl.java
+END
+AdminDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/project/!svn/ver/66/CWS/src/cn/zj/sunda/water/dao/impl/AdminDaoImpl.java
+END
+AreaDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/project/!svn/ver/81/CWS/src/cn/zj/sunda/water/dao/impl/AreaDaoImpl.java
+END
+DetectionDataDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/project/!svn/ver/56/CWS/src/cn/zj/sunda/water/dao/impl/DetectionDataDaoImpl.java
+END

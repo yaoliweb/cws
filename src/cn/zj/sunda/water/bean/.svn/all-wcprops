@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/project/!svn/ver/63/CWS/src/cn/zj/sunda/water/bean
+END
+SyscodeBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/project/!svn/ver/30/CWS/src/cn/zj/sunda/water/bean/SyscodeBean.java
+END
+testsql.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/project/!svn/ver/63/CWS/src/cn/zj/sunda/water/bean/testsql.java
+END
+BaseBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/project/!svn/ver/63/CWS/src/cn/zj/sunda/water/bean/BaseBean.java
+END
+SewageBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/project/!svn/ver/108/CWS/src/cn/zj/sunda/water/bean/SewageBean.java
+END
+ReadMessages.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/project/!svn/ver/63/CWS/src/cn/zj/sunda/water/bean/ReadMessages.java
+END
+BugBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/project/!svn/ver/108/CWS/src/cn/zj/sunda/water/bean/BugBean.java
+END
+UserBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/project/!svn/ver/108/CWS/src/cn/zj/sunda/water/bean/UserBean.java
+END
+DayCollectBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/project/!svn/ver/63/CWS/src/cn/zj/sunda/water/bean/DayCollectBean.java
+END
+MessageBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/project/!svn/ver/108/CWS/src/cn/zj/sunda/water/bean/MessageBean.java
+END
+ServiceLocatorBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/project/!svn/ver/78/CWS/src/cn/zj/sunda/water/bean/ServiceLocatorBean.java
+END
+RoleMenuBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/project/!svn/ver/29/CWS/src/cn/zj/sunda/water/bean/RoleMenuBean.java
+END
+AdminBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/project/!svn/ver/63/CWS/src/cn/zj/sunda/water/bean/AdminBean.java
+END
+NavigationResults.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/project/!svn/ver/88/CWS/src/cn/zj/sunda/water/bean/NavigationResults.java
+END
+RunDataBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/project/!svn/ver/55/CWS/src/cn/zj/sunda/water/bean/RunDataBean.java
+END
+SysparamBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/project/!svn/ver/63/CWS/src/cn/zj/sunda/water/bean/SysparamBean.java
+END
+UserroleBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/project/!svn/ver/30/CWS/src/cn/zj/sunda/water/bean/UserroleBean.java
+END
+RoleBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/project/!svn/ver/8/CWS/src/cn/zj/sunda/water/bean/RoleBean.java
+END
+ApplicationBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/project/!svn/ver/63/CWS/src/cn/zj/sunda/water/bean/ApplicationBean.java
+END
+UsermenuBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/project/!svn/ver/30/CWS/src/cn/zj/sunda/water/bean/UsermenuBean.java
+END
+MenuBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/project/!svn/ver/53/CWS/src/cn/zj/sunda/water/bean/MenuBean.java
+END
+ComparatorMenu.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/project/!svn/ver/8/CWS/src/cn/zj/sunda/water/bean/ComparatorMenu.java
+END
+SendMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/project/!svn/ver/63/CWS/src/cn/zj/sunda/water/bean/SendMessage.java
+END
+DetectionDataBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/project/!svn/ver/55/CWS/src/cn/zj/sunda/water/bean/DetectionDataBean.java
+END
+AreaBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/project/!svn/ver/108/CWS/src/cn/zj/sunda/water/bean/AreaBean.java
+END

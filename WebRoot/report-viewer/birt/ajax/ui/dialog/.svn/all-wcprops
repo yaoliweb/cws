@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/ui/dialog
+END
+AbstractParameterDialog.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/ui/dialog/AbstractParameterDialog.js
+END
+BirtSimpleExportDataDialog.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/ui/dialog/BirtSimpleExportDataDialog.js
+END
+BirtConfirmationDialog.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/ui/dialog/BirtConfirmationDialog.js
+END
+BirtPrintReportDialog.js
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/ui/dialog/BirtPrintReportDialog.js
+END
+BirtTabedDialogBase.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/ui/dialog/BirtTabedDialogBase.js
+END
+AbstractBaseDialog.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/ui/dialog/AbstractBaseDialog.js
+END
+BirtExportReportDialog.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/ui/dialog/BirtExportReportDialog.js
+END
+BirtExceptionDialog.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/ui/dialog/BirtExceptionDialog.js
+END
+BirtPrintReportServerDialog.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/ui/dialog/BirtPrintReportServerDialog.js
+END
+BirtParameterDialog.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/ui/dialog/BirtParameterDialog.js
+END
+AbstractExceptionDialog.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/ui/dialog/AbstractExceptionDialog.js
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/project/!svn/ver/8/CWS/src/cn/zj/sunda/water/exception
+END
+WaterException.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/project/!svn/ver/8/CWS/src/cn/zj/sunda/water/exception/WaterException.java
+END
+UsernameNotExistException.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/project/!svn/ver/8/CWS/src/cn/zj/sunda/water/exception/UsernameNotExistException.java
+END

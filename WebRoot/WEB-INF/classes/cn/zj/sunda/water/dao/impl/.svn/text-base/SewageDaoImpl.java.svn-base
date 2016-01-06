@@ -1,0 +1,62 @@
+package cn.zj.sunda.water.dao.impl;
+
+import java.util.List;
+
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
+import cn.zj.sunda.water.bo.ControlLog;
+import cn.zj.sunda.water.bo.Sewage;
+import cn.zj.sunda.water.dao.SewageDao;
+
+public class SewageDaoImpl extends HibernateDaoSupport implements SewageDao {
+
+	public void deleteSewage(Sewage sewage) {
+		
+		getHibernateTemplate().delete(sewage);
+
+	}
+
+	public List<Sewage> queryAllSewage() {
+		
+		List<Sewage> list = getHibernateTemplate().find("from Sewage");
+		return list;
+	}
+
+	public List<Sewage> querySewageByCondition(String condition) {
+		List<Sewage> list = getHibernateTemplate().find("from Sewage where "+condition);
+		return list;
+	}
+
+	public Sewage querySewageById(int id) {
+		
+		Sewage sewage = getHibernateTemplate().get(Sewage.class, id);
+		return sewage;
+	}
+
+	public void saveSewage(Sewage sewage) {
+		
+		getHibernateTemplate().saveOrUpdate(sewage);
+
+	}
+	
+	public Sewage querySewageByShorttitle(String title) {
+		
+		Sewage sewage = (Sewage)getHibernateTemplate().find("from Sewage where shortTitle ='"+title+"'").get(0);
+		return sewage;
+	}
+
+	public Sewage querySewageByName(String sewageName) {
+		return (Sewage)getHibernateTemplate().find("from Sewage where name ='" + sewageName + "'").get(0);
+	}
+	
+	public List<Sewage> querySewageByAreaId(Integer areaId) {
+		
+		return getHibernateTemplate().find("from Sewage where areaID ='" + areaId + "'");
+	}
+	
+	public void saveControlLog(ControlLog controlLog) {
+		
+		getHibernateTemplate().saveOrUpdate(controlLog);
+
+	}	
+}

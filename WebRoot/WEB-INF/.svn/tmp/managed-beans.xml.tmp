@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="1.2" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xi="http://www.w3.org/2001/XInclude"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
+ <managed-bean>
+  <description>Service locator of the business services</description>
+  <managed-bean-name>serviceLocatorBean</managed-bean-name>
+  <managed-bean-class>cn.zj.sunda.water.bean.ServiceLocatorBean</managed-bean-class>
+  <managed-bean-scope>application</managed-bean-scope>
+ </managed-bean>
+ <managed-bean>
+  <managed-bean-name>userBean</managed-bean-name>
+  <managed-bean-class>cn.zj.sunda.water.bean.UserBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+   <property-name>serviceLocator</property-name>
+   <value>#{serviceLocatorBean}</value>
+  </managed-property>
+ </managed-bean>
+ <managed-bean>
+  <managed-bean-name>menuBean</managed-bean-name>
+  <managed-bean-class>cn.zj.sunda.water.bean.MenuBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+   <property-name>serviceLocator</property-name>
+   <value>#{serviceLocatorBean}</value>
+  </managed-property>
+ </managed-bean>
+ <!-- 角色管理Begin -->
+ <managed-bean>
+  <managed-bean-name>roleBean</managed-bean-name>
+  <managed-bean-class>cn.zj.sunda.water.bean.RoleBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+   <property-name>serviceLocator</property-name>
+   <value>#{serviceLocatorBean}</value>
+  </managed-property>
+ </managed-bean>
+ <!-- 角色管理End 
+ 污水站点管理Begin -->
+ <managed-bean>
+  <managed-bean-name>sewageBean</managed-bean-name>
+  <managed-bean-class>cn.zj.sunda.water.bean.SewageBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+   <property-name>serviceLocator</property-name>
+   <value>#{serviceLocatorBean}</value>
+  </managed-property>
+ </managed-bean>
+ <!-- 污水站点管理End 
+ 日汇总Begin -->
+ <managed-bean>
+  <managed-bean-name>dayCollectBean</managed-bean-name>
+  <managed-bean-class>cn.zj.sunda.water.bean.DayCollectBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+   <property-name>serviceLocator</property-name>
+   <value>#{serviceLocatorBean}</value>
+  </managed-property>
+ </managed-bean>
+ <!-- 日汇总End 
+ 地区管理Begin -->
+ <managed-bean>
+  <managed-bean-name>areaBean</managed-bean-name>
+  <managed-bean-class>cn.zj.sunda.water.bean.AreaBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+   <property-name>serviceLocator</property-name>
+   <value>#{serviceLocatorBean}</value>
+  </managed-property>
+ </managed-bean>
+ <!-- 地区管理End 
+ 管理员管理Begin -->
+ <managed-bean>
+  <managed-bean-name>adminBean</managed-bean-name>
+  <managed-bean-class>cn.zj.sunda.water.bean.AdminBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+   <property-name>serviceLocator</property-name>
+   <value>#{serviceLocator}</value>
+  </managed-property>
+ </managed-bean>
+ <!-- 管理员管理End 
+ 检测数据Begin -->
+ <managed-bean>
+  <managed-bean-name>detectionDataBean</managed-bean-name>
+  <managed-bean-class>cn.zj.sunda.water.bean.DetectionDataBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+   <property-name>serviceLocator</property-name>
+   <value>#{serviceLocator}</value>
+  </managed-property>
+ </managed-bean>
+ <!-- 检测数据End 
+ 运行数据Begin -->
+ <managed-bean>
+  <managed-bean-name>runDataBean</managed-bean-name>
+  <managed-bean-class>cn.zj.sunda.water.bean.RunDataBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+   <property-name>serviceLocator</property-name>
+   <value>#{serviceLocator}</value>
+  </managed-property>
+ </managed-bean>
+ <!-- 运行数据End -->
+  <!-- 地区管理Begin  -->
+ <managed-bean>
+  <managed-bean-name>sysparamBean</managed-bean-name>
+  <managed-bean-class>cn.zj.sunda.water.bean.SysparamBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+   <property-name>serviceLocator</property-name>
+   <value>#{serviceLocatorBean}</value>
+  </managed-property>
+ </managed-bean>
+ <!-- 地区管理End -->
+   <!-- 短信管理Begin  -->
+ <managed-bean>
+  <managed-bean-name>messageBean</managed-bean-name>
+  <managed-bean-class>cn.zj.sunda.water.bean.MessageBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+   <property-name>serviceLocator</property-name>
+   <value>#{serviceLocatorBean}</value>
+  </managed-property>
+ </managed-bean>
+ <!-- 短信管理End -->
+ <managed-bean>
+  <managed-bean-name>applicationBean</managed-bean-name>
+    <managed-bean-class>catalog.view.bean.ApplicationBean</managed-bean-class>
+    <managed-bean-scope>application</managed-bean-scope>
+    <managed-property>
+    	<property-name>serviceLocator</property-name>
+    	<value>#{serviceLocatorBean}</value>
+    </managed-property>    
+  </managed-bean>
+  
+  <!-- 故障管理Begin -->
+  <managed-bean>
+    <managed-bean-name>bugBean</managed-bean-name>
+    <managed-bean-class>cn.zj.sunda.water.bean.BugBean</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+    <managed-property>
+    	<property-name>serviceLocator</property-name>
+    	<value>#{serviceLocatorBean}</value>
+    </managed-property>     
+  </managed-bean>
+  <!-- 故障管理End -->  
+</faces-config>

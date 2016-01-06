@@ -1,0 +1,223 @@
+<%@ page language="java"  contentType="text/html;charset=UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsf/html" prefix="h" %>
+<%@ taglib uri="http://java.sun.com/jsf/core" prefix="f" %>
+<%@ taglib uri="http://richfaces.org/rich" prefix="rich"%>
+<%@ taglib uri="http://richfaces.org/a4j" prefix="a4j"%>
+<%@ page import= "java.util.List"%> 
+<%@ page import= "cn.zj.sunda.water.bo.Sewage"%> 
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  
+<body>
+	<div
+		style="overfolw: auto; width: 805px; height: 605px; OVERFLOW-y: auto; OVERFLOW-x: auto">
+
+		<rich:gmap id="mapVar" gmapVar="mapVar"
+			style="width:800px;height:600px"
+			gmapKey="ABQIAAAAr_kWlyTgX4yfWopvtEcxDRRRDOqc_-HaCvCgl460ugpXPxZCkhQyHpWen4IabAs4w-La8EuEU92tPw"
+			lat="31.593349" lng="120.383333" mapType="G_NORMAL_MAP"
+			zoom="11" oninit="init(mapVar)">
+		</rich:gmap>
+		<script type="text/javascript">
+		function init(map) {
+		//var allsewage = "<%=session.getAttribute("allsewage")%>";
+		<% List<Sewage> sewage = (List<Sewage>)session.getAttribute("allsewage");
+		   for(int i =0;i<sewage.size();i++)
+		   {
+		   		String equipment1state = sewage.get(i).getEquipment1state();
+		   		String equipment2state = sewage.get(i).getEquipment2state();
+		   		String equipment3state = sewage.get(i).getEquipment3state();
+		   		String equipment4state = sewage.get(i).getEquipment4state();
+		   		//String equipment5state = sewage.get(i).getEquipment5state();
+
+		   		Float detection1 = sewage.get(i).getDetection1();
+		   		Float detection1ul = sewage.get(i).getDetection1ul();
+		   		Float detection1dl = sewage.get(i).getDetection1dl();
+		   		Float detection2 = sewage.get(i).getDetection2();
+		   		Float detection2ul = sewage.get(i).getDetection2ul();
+		   		Float detection2dl = sewage.get(i).getDetection2dl();
+		   		Float detection3 = sewage.get(i).getDetection3();
+		   		Float detection3ul = sewage.get(i).getDetection3ul();
+		   		Float detection3dl = sewage.get(i).getDetection3dl();
+		   		Float detection4 = sewage.get(i).getDetection4();
+		   		Float detection4ul = sewage.get(i).getDetection4ul();
+		   		Float detection4dl = sewage.get(i).getDetection4dl();
+		   		Float detection5 = sewage.get(i).getDetection5();
+		   		Float detection5ul = sewage.get(i).getDetection5ul();
+		   		Float detection5dl = sewage.get(i).getDetection5dl();
+		   		//Float detection6 = sewage.get(i).getDetection6();
+		   		//Float detection6ul = sewage.get(i).getDetection6ul();
+		   		//Float detection6dl = sewage.get(i).getDetection6dl();				   		
+		   		%>
+		   		 var iicon = new GIcon(G_DEFAULT_ICON);
+		   		<%
+		   		if(equipment1state.equals("3")||equipment2state.equals("3")||equipment3state.equals("3")||equipment4state.equals("3"))
+		   		{
+		   		%>
+			    iicon.image = "http://www.google.cn/intl/en_us/mapfiles/ms/micons/red-dot.png";
+		   		<%
+		   		}
+		   		else
+		   		{
+					if(((detection1>detection1ul)||(detection1<detection1dl)) ||
+					((detection2>detection2ul)||(detection2<detection2dl)) ||
+					((detection3>detection3ul)||(detection3<detection3dl)) ||
+					((detection4>detection4ul)||(detection4<detection4dl)) ||
+					((detection5>detection5ul)||(detection5<detection5dl)))
+			   		{ 
+			   		%>
+				    iicon.image = "http://www.google.cn/intl/en_us/mapfiles/ms/micons/yellow-dot.png";
+			   		<%
+			   		}			   		
+			   		else {
+			   		%>			   		
+				    iicon.image = "http://www.google.cn/intl/en_us/mapfiles/ms/micons/green-dot.png";
+			   		<%
+			   		}
+		   		}%>
+		   		
+		   		<%
+					if(equipment1state.equals("3"))
+					{
+				%>	
+					var eqpstate1 = "<font color='red'>"+"提升泵：故障"+"</font>"+"<br/>";
+				<%
+			   		} else {
+			   	%>	
+					var eqpstate1 = "提升泵："+"<%=equipment1state.equals("1")? "运行" : (equipment1state.equals("2")?"停止":"未安装")%>"+ "<br/>"
+				<%			   		
+			   		} 
+			   	%>
+		   		
+		   		<%
+					if(equipment2state.equals("3"))
+					{
+				%>	
+					var eqpstate2 = "<font color='red'>"+"曝气机：故障"+"</font>"+"<br/>";
+				<%
+			   		} else {
+			   	%>	
+					var eqpstate2 = "曝气机："+"<%=equipment1state.equals("1")? "运行" : (equipment1state.equals("2")?"停止":"未安装")%>"+ "<br/>"
+				<%			   		
+			   		} 
+			   	%>
+			   	
+		   		<%
+					if(equipment3state.equals("3"))
+					{
+				%>	
+					var eqpstate3 = "<font color='red'>"+"回流泵：故障"+"</font>"+"<br/>";
+				<%
+			   		} else {
+			   	%>	
+					var eqpstate3 = "回流泵："+"<%=equipment1state.equals("1")? "运行" : (equipment1state.equals("2")?"停止":"未安装")%>"+ "<br/>"
+				<%			   		
+			   		} 
+			   	%>
+			   	
+		   		<%
+					if(equipment4state.equals("3"))
+					{
+				%>	
+					var eqpstate4 = "<font color='red'>"+"备用：故障"+"</font>"+"<br/>";
+				<%
+			   		} else {
+			   	%>	
+					var eqpstate4 = "备用："+"<%=equipment1state.equals("1")? "运行" : (equipment1state.equals("2")?"停止":"未安装")%>"+ "<br/>"
+				<%			   		
+			   		} 
+			   	%>
+		   	
+		   		<%
+					if((detection1>detection1ul)||(detection1<detection1dl))
+					{
+				%>	
+						var detvalue1 = "<font color='orange'>"+"温度："+"<%=new java.text.DecimalFormat("0.00").format(sewage.get(i).getDetection1())%>"+"</font>"+"<br/>";
+				<%
+			   		} else {
+			   	%>	
+					var detvalue1 = "温度："+"<%=new java.text.DecimalFormat("0.00").format(sewage.get(i).getDetection1())%>"+ "<br/>"
+				<%			   		
+			   		} 
+			   	%>
+			   	
+		   		<%
+					if((detection2>detection2ul)||(detection2<detection2dl))
+					{
+				%>	
+					var detvalue2 = "<font color='orange'>"+"PH："+"<%=new java.text.DecimalFormat("0.00").format(sewage.get(i).getDetection2())%>"+"</font>"+"<br/>";
+				<%
+			   		} else {
+			   	%>	
+					var detvalue2 = "PH："+"<%=new java.text.DecimalFormat("0.00").format(sewage.get(i).getDetection2())%>"+ "<br/>"
+				<%			   		
+			   		} 
+			   	%>
+			   	
+		   		<%
+					if((detection3>detection3ul)||(detection3<detection3dl))
+					{
+				%>	
+					var detvalue3 = "<font color='orange'>"+"ORP："+"<%=new java.text.DecimalFormat("0.00").format(sewage.get(i).getDetection3())%>"+"</font>"+"<br/>";
+				<%
+			   		} else {
+			   	%>	
+					var detvalue3 = "ORP："+"<%=new java.text.DecimalFormat("0.00").format(sewage.get(i).getDetection3())%>"+ "<br/>"
+				<%			   		
+			   		} 
+			   	%>	
+			   	
+		   		<%
+					if((detection4>detection4ul)||(detection4<detection4dl))
+					{
+				%>	
+					var detvalue4 = "<font color='orange'>"+"DO："+"<%=new java.text.DecimalFormat("0.00").format(sewage.get(i).getDetection4())%>"+"</font>"+"<br/>";
+				<%
+			   		} else {
+			   	%>	
+					var detvalue4 = "DO："+"<%=new java.text.DecimalFormat("0.00").format(sewage.get(i).getDetection4())%>"+ "<br/>"
+				<%			   		
+			   		} 
+			   	%>
+			   	
+		   		<%
+					if((detection5>detection5ul)||(detection5<detection5dl))
+					{
+				%>	
+					var detvalue5 = "<font color='orange'>"+"备用："+"<%=new java.text.DecimalFormat("0.00").format(sewage.get(i).getDetection5())%>"+"</font>"+"<br/>";
+				<%
+			   		} else {
+			   	%>	
+					var detvalue5 = "备用："+"<%=new java.text.DecimalFormat("0.00").format(sewage.get(i).getDetection5())%>"+ "<br/>"
+				<%			   		
+			   		} 
+			   	%>				   	
+			   				   				   				   					   		   				   				   	   		
+				markerOptions = { icon:iicon };	
+			   	var maker = new GMarker(new GLatLng(<%=sewage.get(i).getCoordinateX()%>, <%=sewage.get(i).getCoordinateY()%>),markerOptions);						
+				var html = "<b><a href='/CWS/pages/work/sewagecontrol2.faces?sewageid=<%=sewage.get(i).getSewageId()%>&sewagetitle=<%=java.net.URLEncoder.encode(sewage.get(i).getShortTitle())%>'><%=sewage.get(i).getName()%></a>" + "</b><br/>" 
+				     	+ eqpstate1
+				        + eqpstate2
+				        + eqpstate3
+				        + eqpstate4
+				        + detvalue1
+				        + detvalue2
+				        + detvalue3
+				        + detvalue4
+				        + detvalue5
+						+ '<a href="/CWS/pages/work/detectionlist.faces?sewageid=<%=sewage.get(i).getSewageId()%>">查看详细历史记录</a>';
+				maker.bindInfoWindowHtml(html);
+				map.addOverlay(maker);
+			<%
+				}
+			%>
+			}
+		</script>
+	</div>
+</body>
+</html>

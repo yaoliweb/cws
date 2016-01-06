@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/project/!svn/ver/70/CWS/src/cn/zj/sunda/water/util
+END
+DynamicDataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/project/!svn/ver/8/CWS/src/cn/zj/sunda/water/util/DynamicDataSource.java
+END
+VerifyCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/project/!svn/ver/25/CWS/src/cn/zj/sunda/water/util/VerifyCode.java
+END
+FacesUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/project/!svn/ver/70/CWS/src/cn/zj/sunda/water/util/FacesUtils.java
+END
+CustomerContextHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/project/!svn/ver/8/CWS/src/cn/zj/sunda/water/util/CustomerContextHolder.java
+END
+VerifyCodeServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/project/!svn/ver/27/CWS/src/cn/zj/sunda/water/util/VerifyCodeServlet.java
+END
+CipherUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/project/!svn/ver/8/CWS/src/cn/zj/sunda/water/util/CipherUtil.java
+END
+DataSourceMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/project/!svn/ver/8/CWS/src/cn/zj/sunda/water/util/DataSourceMap.java
+END
+BirtFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/project/!svn/ver/51/CWS/src/cn/zj/sunda/water/util/BirtFactory.java
+END
+InitServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/project/!svn/ver/32/CWS/src/cn/zj/sunda/water/util/InitServlet.java
+END

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="1.2" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xi="http://www.w3.org/2001/XInclude"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
+ <navigation-rule>
+ <!-- 登录成功Begin -->
+  <from-view-id>/login.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>success</from-outcome>
+   <to-view-id>/home.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <!-- 登录成功End -->
+ <!-- 首页导航Begin -->
+ 
+ <!-- 首页导航End -->
+ 
+ <!-- 用户管理Begin -->
+ <navigation-rule>
+  <from-view-id>/pages/User/usermanager.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>adduseraction</from-outcome>
+   <to-view-id>/pages/User/useradd.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>edituseraction</from-outcome>
+   <to-view-id>/pages/User/useredit.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/pages/User/useradd.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>addusersuccessaction</from-outcome>
+   <to-view-id>/pages/User/usermanager.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/pages/User/useredit.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>editusersuccessaction</from-outcome>
+   <to-view-id>/pages/User/usermanager.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <!-- 用户管理End -->
+ <!-- 角色管理Begin -->
+ <navigation-rule>
+  <from-view-id>/pages/User/rolemanager.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>addroleaction</from-outcome>
+   <to-view-id>/pages/User/roleadd.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>editroleaction</from-outcome>
+   <to-view-id>/pages/User/roleedit.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/pages/User/roleadd.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>addrolesuccessaction</from-outcome>
+   <to-view-id>/pages/User/rolemanager.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/pages/User/roleedit.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>editrolesuccessaction</from-outcome>
+   <to-view-id>/pages/User/rolemanager.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <!-- 角色管理End -->
+ <!-- 菜单管理Begin -->
+ <navigation-rule>
+  <from-view-id>/pages/User/menumanager.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>addmenuaction</from-outcome>
+   <to-view-id>/pages/User/menuadd.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>editmenuaction</from-outcome>
+   <to-view-id>/pages/User/menuedit.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/pages/User/menuadd.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>addmenusuccessaction</from-outcome>
+   <to-view-id>/pages/User/menumanager.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/pages/User/menuedit.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>editmenusuccessaction</from-outcome>
+   <to-view-id>/pages/User/menumanager.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <!-- 菜单管理End -->
+<<<<<<< .mine
+ <!-- 故障管理Begin -->
+ <navigation-rule>
+  <from-view-id>/pages/Fault/faultmanager.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>faultcontent</from-outcome>
+   <to-view-id>/pages/Fault/faultedit.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>  
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/pages/Fault/faultedit.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>faulteditsavesuccess</from-outcome>
+   <to-view-id>/pages/Fault/faultmanager.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/pages/Fault/faultlist.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>faultdetail</from-outcome>
+   <to-view-id>/pages/Fault/faultdetail.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>  
+ <!-- 故障管理End  -->
+=======
+  <!-- 区县管理Begin -->
+ <navigation-rule>
+  <from-view-id>/pages/setup/areamanager.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>areaaddaction</from-outcome>
+   <to-view-id>/pages/setup/areaadd.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>areaeditaction</from-outcome>
+   <to-view-id>/pages/setup/areaedit.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+  <navigation-rule>
+  <from-view-id>/pages/setup/areaadd.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>areaaddsuccessaction</from-outcome>
+   <to-view-id>/pages/setup/areamanager.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/pages/setup/areaedit.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>areaeditsuccessaction</from-outcome>
+   <to-view-id>/pages/setup/areamanager.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <!-- 区县管理End -->
+ 
+   <!-- 管理员管理Begin -->
+ <navigation-rule>
+  <from-view-id>/pages/setup/adminmanager.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>adminaddaction</from-outcome>
+   <to-view-id>/pages/setup/adminadd.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>admineditaction</from-outcome>
+   <to-view-id>/pages/setup/adminedit.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+  <navigation-rule>
+  <from-view-id>/pages/setup/adminadd.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>adminaddsuccessaction</from-outcome>
+   <to-view-id>/pages/setup/adminmanager.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/pages/setup/adminedit.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>admineditsuccessaction</from-outcome>
+   <to-view-id>/pages/setup/adminmanager.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <!-- 管理员管理End -->
+    <!-- 系统参数管理Begin -->
+ <navigation-rule>
+  <from-view-id>/pages/setup/sysparammanager.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>sysparamaddaction</from-outcome>
+   <to-view-id>/pages/setup/sysparamadd.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>sysparameditaction</from-outcome>
+   <to-view-id>/pages/setup/sysparamedit.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+  <navigation-rule>
+  <from-view-id>/pages/setup/sysparamadd.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>sysparamaddsuccessaction</from-outcome>
+   <to-view-id>/pages/setup/sysparammanager.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/pages/setup/sysparamedit.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>sysparameditsuccessaction</from-outcome>
+   <to-view-id>/pages/setup/sysparammanager.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <!-- 系统参数管理End -->
+     <!-- 污水站点管理Begin -->
+ <navigation-rule>
+  <from-view-id>/pages/setup/sewagemanager.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>sewageaddaction</from-outcome>
+   <to-view-id>/pages/setup/sewageadd.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>sewageeditaction</from-outcome>
+   <to-view-id>/pages/setup/sewageedit.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+  <navigation-rule>
+  <from-view-id>/pages/setup/sewageadd.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>sewageaddsuccessaction</from-outcome>
+   <to-view-id>/pages/setup/sewagemanager.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/pages/setup/sewageedit.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>sewageeditsuccessaction</from-outcome>
+   <to-view-id>/pages/setup/sewagemanager.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <!-- 污水站点管理End -->
+>>>>>>> .r75
+</faces-config>

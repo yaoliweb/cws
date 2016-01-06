@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/core
+END
+BirtEventDispatcher.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/core/BirtEventDispatcher.js
+END
+Mask.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/core/Mask.js
+END
+BirtSoapRequest.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/core/BirtSoapRequest.js
+END
+BirtCommunicationManager.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/core/BirtCommunicationManager.js
+END
+BirtDndManager.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/core/BirtDndManager.js
+END
+BirtEvent.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/core/BirtEvent.js
+END
+BirtSoapResponse.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/ajax/core/BirtSoapResponse.js
+END

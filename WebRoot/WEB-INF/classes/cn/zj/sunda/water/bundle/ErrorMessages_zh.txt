@@ -1,0 +1,23 @@
+﻿# 系统配置  Begin
+selectSuperArea=请选择上级区县！
+selectArea=请选择所属区县！
+controlIdExist=控制系统ID已存在！
+# 系统配置  End
+
+# 发送短信  Begin
+telnull=手机号码为空，请选择管理员！
+# 发送短信  End
+
+# 站点监控  Begin
+sewagenull=请选择地区和污水站点！
+areaManagernull=请将所属地区、管理员、控制系统ID、简称和名称补充完整！
+sewageshorttitlenull=站点名称不存在！
+# 站点监控  End
+
+# 用户管理  Begin
+addrole=请填写角色名称！
+addmenu=请填写菜单位置和菜单名称！
+userNameNull=请输入用户名！
+roleNull=该用户需要分配角色，请选择用户角色！
+userExist=该用户已存在，请重新输入用户名称！
+# 用户管理  End

@@ -1,0 +1,194 @@
+﻿         	# 登录Begin
+swslogin=农村污水无线管理系统-登录
+user=用户名
+password=密码
+please=请先登录
+role=角色
+deuser=一般用户
+admin=管理员
+validateCode=验证码
+notClear=看不清
+login=登录系统
+reset=重置
+outtip=退出提示
+outconfirm=您确定退出？
+logout1=退出登录
+logout2=感谢您的使用！
+# 登录End
+
+# 联系我们Begin
+contact=联系我们
+address1=地址：无锡市锡山经济开发区芙蓉中三路99号  
+address2=邮编：214100
+address3=电话：0510-81015290
+address4=传真：0510-81015263
+address5=网址：www.sunda.zj.cn
+help=帮助文件
+help1=欢迎使用农村污水无线管理系统
+# 联系我们End
+
+# 首页 Begin
+news=新闻
+home=首页
+username=用户名:
+dept=所在部门:
+sws=农村污水无线管理系统
+more=更多...
+menu=菜单导航
+notice=公告
+event=个人事项
+faq=系统问答
+foot=江苏商达水务有限公司
+# 首页End
+
+# 用户管理Begin
+userlist=用户列表
+logid=登录名
+username=姓名
+dept=部门
+tel=联系电话
+useradd=添加用户
+thesame=初始密码与用户名一致
+useredit=编辑用户
+# 用户管理End
+
+# 角色管理Begin
+roleid=角色ID
+rolename=角色名
+rolelist=角色列表
+roleadd=添加角色
+roleedit=编辑角色
+# 角色管理End
+
+# 菜单管理Begin
+menulist=菜单列表
+menuname=菜单名称
+menulocation=菜单位置
+menufilename=文件名
+menutype=类型
+menuadd=添加菜单
+menuedit=编辑菜单
+# 菜单管理End
+
+# 故障系统Begin
+devicecheck=设备巡检
+devicename=设备名称
+deviceitem=检测指标
+checkstatus=检测状态
+manualcheck=人工检测
+testitem=检测指标
+testcycle=采样周期
+testtime=检测时间
+testvalue=检测值
+teststatus=检测状态
+run=运行
+stop=停止
+bad=故障
+bugmanager=故障处理
+bugcondition=故障情況
+areaname=地区名称
+sewagestation=污水站名称
+bugdevice=故障设备
+bugcondition=故障情况
+faultlevel=故障级别
+faultstatus=故障状态
+faultocttime=发生时间
+devrepairfaultstate=故障情况
+devrepairfaultcase=故障原因
+devrepairrepairstate=维修情况
+devrepairrepairprice=维修费用
+devrepairrepairdate=完成时间
+devrepairrepairer=维修员
+devrepairchecker=验收员
+devrepairoperator=操作员
+octime1=起始时间：
+octime2=终止时间：
+faultadd=新增故障
+faultlevel0=请选择级别
+faultlevel1=一般
+faultlevel2=提示
+faultlevel3=警告
+faultstatus0=请选择状态
+faultstatus1=待处理
+faultstatus2=已通知
+faultstatus3=处理中
+faultstatus4=已解除
+faultedit=处理故障
+devicechange=更换设备
+faultrelease=解除故障
+originaldeviceinfo=原设备信息
+choosenew=请选择新设备
+faultlist=故障日志
+faultdetail=故障明细
+# 故障系统End
+
+# 公共管理Begin
+selectall=全选
+add=增加
+delete=删除
+save=保存
+search=查找
+cancel=取消
+firstPage=首页
+previousPage=上一页
+nextPage=下一页
+lastPage=末页
+submit=提交
+uninstall=未安装
+eqpfault=故障
+# 公共管理End
+
+# 短信系统Begin
+sendmessage=发送短信
+managertel=负责人电话
+messagedetail=短信内容
+messagelist=短信日志
+sendtime=发送时间
+# 短信系统End
+
+# 数据统计Begin
+daily=化验项目日报表
+inputdate=请输入日期:
+selecttypes=请选择类型：
+monthly=化验项目月报表
+yearly=化验项目年报表
+mulmonthly=生产综合月表
+mulyearly=生产综合年表
+govmonthly=业主、政府汇报月报表
+# 数据统计End
+
+# 站点监控Begin
+sewagecontrol=站点实时监控
+sewageselect=选择站点
+sewagedetail=站点详情
+air=提升泵
+water=曝气机
+mud=回流泵
+flow=备用
+back_up=备用
+# 站点监控End
+
+# 站点查询Begin
+sewagesearch=站点查询
+temperature=温度
+ph=PH
+orp=ORP
+detflow=LS
+turbidity=DO
+# 站点查询End
+
+# 污水站配置Begin
+longitude=经度
+latitude=纬度
+detection1ul=检测一上限
+detection1dl=检测一下限
+detection2ul=检测二上限
+detection2dl=检测二下限
+detection3ul=检测三上限
+detection3dl=检测三下限
+detection4ul=检测四上限
+detection4dl=检测四下限
+detection5ul=检测五上限
+detection5dl=检测五下限
+sewageedit=编辑污水站点
+# 污水站配置End

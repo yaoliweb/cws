@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="adminDataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName">
+			<value>com.microsoft.sqlserver.jdbc.SQLServerDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:sqlserver://localhost:1433;databaseName=SWS_DB
+			</value>
+		</property>
+		<property name="username">
+			<value>sa</value>
+		</property>
+		<property name="password">
+			<value>123</value>
+		</property>
+	</bean>
+
+	<bean id="HuaanDataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName">
+			<value>com.microsoft.sqlserver.jdbc.SQLServerDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:sqlserver://localhost:1433;databaseName=CS
+			</value>
+		</property>
+		<property name="username">
+			<value>sa</value>
+		</property>
+		<property name="password">
+			<value>123</value>
+		</property>
+	</bean>
+
+	<bean id="dataSource" class="cn.zj.sunda.water.util.DynamicDataSource">
+		<property name="targetDataSources">
+			<map key-type="java.lang.String">
+				<entry key="SWS_DB" value-ref="adminDataSource" />
+				<entry key="SWS_HA" value-ref="HuaanDataSource" />
+			</map>
+
+		</property>
+		<property name="defaultTargetDataSource" ref="HuaanDataSource" />
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</prop>
+				<prop key="hibernate.show_sql">false</prop>
+				<prop key="hibernate.format_sql">false</prop>
+				<prop key="hibernate.current_session_context_class">thread</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>cn/zj/sunda/water/bo/Csusers.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/Roles.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/Usermenu.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/Menus.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/Rolemenu.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/Userrole.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/Sewage.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/DayCollect.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/DetectionData.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/Bug.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/Area.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/Administrator.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/RunData.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/Sysparam.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/Message.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/ControlLog.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/DeviceDoc.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/EquipRepairRecord.hbm.xml</value>
+				<value>cn/zj/sunda/water/bo/Statistics.hbm.xml</value>
+			</list>
+		</property>
+
+	</bean>
+	<!-- Spring Data Access Exception Translator Defintion -->
+	<bean id="jdbcExceptionTranslator"
+		class="org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+	</bean>
+
+
+
+	<bean id="UserBean" class="cn.zj.sunda.water.bean.UserBean">
+	</bean>
+	<bean id="MenuBean" class="cn.zj.sunda.water.bean.MenuBean">
+	</bean>
+	<bean id="RoleBean" class="cn.zj.sunda.water.bean.RoleBean">
+	</bean>
+	<bean id="AdminBean" class="cn.zj.sunda.water.bean.AdminBean">
+	</bean>
+	<bean id="AreaBean" class="cn.zj.sunda.water.bean.AreaBean">
+	</bean>	
+	<bean id="BugBean" class="cn.zj.sunda.water.bean.BugBean">
+	</bean>
+	<bean id="DayCollectBean" class="cn.zj.sunda.water.bean.DayCollectBean">
+	</bean>	
+	<bean id="RoleMenuBean" class="cn.zj.sunda.water.bean.RoleMenuBean">
+	</bean>
+	<bean id="SewageBean" class="cn.zj.sunda.water.bean.SewageBean">
+	</bean>
+	<bean id="SyscodeBean" class="cn.zj.sunda.water.bean.SyscodeBean">
+	</bean>	
+	<bean id="UsermenuBean" class="cn.zj.sunda.water.bean.UsermenuBean">
+	</bean>	
+	<bean id="UserroleBean" class="cn.zj.sunda.water.bean.UserroleBean">
+	</bean>	
+	<bean id="DetectionDataBean" class="cn.zj.sunda.water.bean.DetectionDataBean">
+	</bean>	
+	<bean id="RunDataBean" class="cn.zj.sunda.water.bean.RunDataBean">
+	</bean>
+	<bean id="SysparamBean" class="cn.zj.sunda.water.bean.SysparamBean">
+	</bean>
+	<bean id="MessageBean" class="cn.zj.sunda.water.bean.MessageBean">
+	</bean>
+	<bean id="DeviceBean" class="cn.zj.sunda.water.bean.DeviceBean">
+	</bean>
+
+	<!-- User DAO object: Hibernate implementation -->
+	<bean id="userDao" class="cn.zj.sunda.water.dao.impl.UserDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="menuDao" class="cn.zj.sunda.water.dao.impl.MenuDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="roleDao" class="cn.zj.sunda.water.dao.impl.RoleDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+<bean id="sewageDao" class="cn.zj.sunda.water.dao.impl.SewageDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="dayCollectDao" class="cn.zj.sunda.water.dao.impl.DayCollectDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	<bean id="areaDao" class="cn.zj.sunda.water.dao.impl.AreaDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"></ref>
+		</property>
+	</bean>
+	<bean id="detectionDataDao" class="cn.zj.sunda.water.dao.impl.DetectionDataDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"></ref>
+		</property>
+	</bean>
+	<bean id="runDataDao" class="cn.zj.sunda.water.dao.impl.RunDataDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"></ref>
+		</property>
+	</bean>
+	<bean id="adminDao" class="cn.zj.sunda.water.dao.impl.AdminDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"></ref>
+		</property>
+	</bean>
+	<bean id="sysparamDao" class="cn.zj.sunda.water.dao.impl.SysparamDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"></ref>
+		</property>
+	</bean>
+	<bean id="messagesDao" class="cn.zj.sunda.water.dao.impl.MessagesDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"></ref>
+		</property>
+	</bean>
+	<bean id="bugDao" class="cn.zj.sunda.water.dao.impl.BugDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"></ref>
+		</property>
+	</bean>	
+	<bean id="DeviceDocDao" class="cn.zj.sunda.water.dao.impl.DeviceDocDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"></ref>
+		</property>
+	</bean>
+	<bean id="EquipRepairRecordDao" class="cn.zj.sunda.water.dao.impl.EquipRepairRecordDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"></ref>
+		</property>
+	</bean>
+	<bean id="statisticsDao" class="cn.zj.sunda.water.dao.impl.statisticsDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"></ref>
+		</property>
+	</bean>
+	<!--
+		========================= Start of SERVICE DEFINITIONS
+		=========================
+	-->
+
+	<!-- Hibernate Transaction Manager Definition -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+	<!--  User Service Defintion -->
+	<bean id="userService" class="cn.zj.sunda.water.service.impl.UserServiceImpl">
+		<property name="userDao">
+			<ref local="userDao" />
+		</property>
+	</bean>
+	<bean id="menuService" class="cn.zj.sunda.water.service.impl.MenuServiceImpl">
+		<property name="menuDao">
+			<ref local="menuDao" />
+		</property>
+	</bean>
+	<bean id="roleService" class="cn.zj.sunda.water.service.impl.RoleServiceImpl">
+		<property name="roleDao">
+			<ref local="roleDao" />
+		</property>
+	</bean>
+	<bean id="sewageService" class="cn.zj.sunda.water.service.impl.SewageServiceImpl">
+		<property name="sewageDao">
+			<ref local="sewageDao" />
+		</property>
+	</bean>
+	<bean id="dayCollectService" class="cn.zj.sunda.water.service.impl.DayCollectServiceImpl">
+		<property name="dayCollectDao">
+			<ref local="dayCollectDao"/>
+		</property>
+	</bean>
+	<bean id="areaService" class="cn.zj.sunda.water.service.impl.AreaServiceImpl">
+		<property name="areaDao">
+			<ref local="areaDao"/>
+		</property>
+	</bean>
+	<bean id="detectionDataService" class="cn.zj.sunda.water.service.impl.DetectionDataServiceImpl">
+		<property name="detectionDataDao">
+			<ref local="detectionDataDao"/>
+		</property>
+	</bean>
+	<bean id="runDataService" class="cn.zj.sunda.water.service.impl.RunDataServiceImpl">
+		<property name="runDataDao">
+			<ref local="runDataDao"/>
+		</property>
+	</bean>
+	<bean id="adminService" class="cn.zj.sunda.water.service.impl.AdminServiceImpl">
+		<property name="adminDao">
+			<ref local="adminDao"/>
+		</property>
+	</bean>
+	<bean id="sysparamService" class="cn.zj.sunda.water.service.impl.SysparamServiceImpl">
+		<property name="sysparamDao">
+			<ref local="sysparamDao"/>
+		</property>
+	</bean>
+	<bean id="messagesService" class="cn.zj.sunda.water.service.impl.MessagesServiceImpl">
+		<property name="messagesDao">
+			<ref local="messagesDao"/>
+		</property>
+	</bean>
+	<bean id="bugService" class="cn.zj.sunda.water.service.impl.BugServiceImpl">
+		<property name="bugDao">
+			<ref local="bugDao"/>
+		</property>
+	</bean>	
+	<bean id="DeviceDocService" class="cn.zj.sunda.water.service.impl.DeviceDocServiceImpl">
+		<property name="DeviceDocDao">
+			<ref local="DeviceDocDao"/>
+		</property>
+	</bean>	
+	<bean id="EquipRepairRecordService" class="cn.zj.sunda.water.service.impl.EquipRepairRecordServiceImpl">
+		<property name="EquipRepairRecordDao">
+			<ref local="EquipRepairRecordDao"/>
+		</property>
+	</bean>
+	<bean id="StatisticsService" class="cn.zj.sunda.water.service.impl.StatisticsServiceImpl">
+		<property name="statisticsDao">
+			<ref local="statisticsDao"/>
+		</property>
+	</bean>
+</beans>

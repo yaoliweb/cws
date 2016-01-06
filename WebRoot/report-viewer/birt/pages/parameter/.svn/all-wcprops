@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/parameter
+END
+CheckboxParameterFragment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/parameter/CheckboxParameterFragment.jsp
+END
+ComboBoxParameterFragment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/parameter/ComboBoxParameterFragment.jsp
+END
+RadioButtonParameterFragment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/parameter/RadioButtonParameterFragment.jsp
+END
+HiddenParameterFragment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/parameter/HiddenParameterFragment.jsp
+END
+ParameterGroupFragment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/parameter/ParameterGroupFragment.jsp
+END
+TextBoxParameterFragment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/parameter/TextBoxParameterFragment.jsp
+END

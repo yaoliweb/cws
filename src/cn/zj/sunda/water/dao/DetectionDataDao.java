@@ -1,0 +1,20 @@
+package cn.zj.sunda.water.dao;
+
+import java.util.List;
+
+import cn.zj.sunda.water.bo.DetectionData;
+
+public interface DetectionDataDao {
+
+	public List<DetectionData> queryAllDetectionData();
+	
+	public List<DetectionData> queryDetectionDataByCondition(String condition);
+	
+	public DetectionData queryDetectionDataById(int id);
+	
+	public void saveDetectionData(DetectionData detectionData);
+	
+	public void deleteDetectionData(DetectionData detectionData);
+	public List<DetectionData> queryDetectionDataByCondition2(Integer condition);
+	public List<DetectionData> queryDetectionDataBySewageID(Integer id);
+}

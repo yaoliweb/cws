@@ -1,0 +1,11 @@
+<%@ page language="java" pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsf/html" prefix="h"%>
+<center>
+<table>
+<tr>
+<td width="1000px"><hr></td>
+</tr>
+<tr><td align="center"><font face="Arial, Helvetica"><h:outputText value="#{msgs.foot}" style="color: #0080C0; font-size: 14px; font-family: Tahoma, Verdana, Arial, Sans-Serif; font-weight: bold"/></font></td></tr>
+<tr><td align="center"><a href="menu_v.htm" style="color: #0080C0; text-decoration: none">sample@sunda.zj.cn</a></td></tr>
+</table>		
+</center>

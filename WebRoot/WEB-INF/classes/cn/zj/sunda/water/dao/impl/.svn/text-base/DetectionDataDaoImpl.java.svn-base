@@ -1,0 +1,40 @@
+package cn.zj.sunda.water.dao.impl;
+
+import java.util.List;
+
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
+import cn.zj.sunda.water.bo.DetectionData;
+import cn.zj.sunda.water.dao.DetectionDataDao;
+
+public class DetectionDataDaoImpl extends HibernateDaoSupport implements DetectionDataDao {
+
+	public void deleteDetectionData(DetectionData detectionData) {
+		
+		getHibernateTemplate().delete(detectionData);
+
+	}
+
+	public List<DetectionData> queryAllDetectionData() {
+		List<DetectionData> list = getHibernateTemplate().find("from DetectionData");
+		return list;
+	}
+
+	public List<DetectionData> queryDetectionDataByCondition(String condition) {
+		List<DetectionData> list = getHibernateTemplate().find("from DetectionData where "+ condition);
+		return list;
+	}
+
+	public DetectionData queryDetectionDataById(int id) {
+		
+		DetectionData detectionData = getHibernateTemplate().get(DetectionData.class, id);
+		return detectionData;
+	}
+
+	public void saveDetectionData(DetectionData detectionData) {
+		
+		getHibernateTemplate().saveOrUpdate(detectionData);
+
+	}
+
+}

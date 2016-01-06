@@ -1,0 +1,140 @@
+package cn.zj.sunda.water.bo;
+
+import java.util.Date;
+
+
+
+/**
+ * DetectionData entity. @author MyEclipse Persistence Tools
+ */
+
+public class DetectionData  implements java.io.Serializable {
+
+
+    // Fields    
+
+     private Long detectionId;
+     private Sewage sewage;
+     private Date testingtime;
+     private Float detection1;
+     private Float detection2;
+     private Float detection3;
+     private Float detection4;
+     private Float detection5;
+     private Float detection6;
+     private String lastupdate;
+
+
+    // Constructors
+
+    public String getLastupdate() {
+		return lastupdate;
+	}
+
+
+	public void setLastupdate(String lastupdate) {
+		this.lastupdate = lastupdate;
+	}
+
+
+	/** default constructor */
+    public DetectionData() {
+    }
+
+    
+    /** full constructor */
+    public DetectionData(Sewage sewage, Date testingtime, Float detection1, Float detection2, Float detection3, Float detection4, Float detection5, Float detection6) {
+        this.sewage = sewage;
+        this.testingtime = testingtime;
+        this.detection1 = detection1;
+        this.detection2 = detection2;
+        this.detection3 = detection3;
+        this.detection4 = detection4;
+        this.detection5 = detection5;
+        this.detection6 = detection6;
+    }
+
+   
+    // Property accessors
+
+    public Long getDetectionId() {
+        return this.detectionId;
+    }
+    
+    public void setDetectionId(Long detectionId) {
+        this.detectionId = detectionId;
+    }
+
+    public Sewage getSewage() {
+        return this.sewage;
+    }
+    
+    public void setSewage(Sewage sewage) {
+        this.sewage = sewage;
+    }
+
+    public Date getTestingtime() {
+        return this.testingtime;
+    }
+    
+    public void setTestingtime(Date testingtime) {
+        this.testingtime = testingtime;
+    }
+
+    public Float getDetection1() {
+        return this.detection1;
+    }
+    
+    public void setDetection1(Float detection1) {
+        this.detection1 = detection1;
+    }
+
+    public Float getDetection2() {
+        return this.detection2;
+    }
+    
+    public void setDetection2(Float detection2) {
+        this.detection2 = detection2;
+    }
+
+    public Float getDetection3() {
+        return this.detection3;
+    }
+    
+    public void setDetection3(Float detection3) {
+        this.detection3 = detection3;
+    }
+
+    public Float getDetection4() {
+        return this.detection4;
+    }
+    
+    public void setDetection4(Float detection4) {
+        this.detection4 = detection4;
+    }
+
+    public Float getDetection5() {
+        return this.detection5;
+    }
+    
+    public void setDetection5(Float detection5) {
+        this.detection5 = detection5;
+    }
+
+    public Float getDetection6() {
+        return this.detection6;
+    }
+    
+    public void setDetection6(Float detection6) {
+        this.detection6 = detection6;
+    }
+   
+
+
+
+
+
+
+
+
+}

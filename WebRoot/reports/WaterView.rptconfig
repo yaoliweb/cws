@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.21" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__time_37_0</property>
+            <property name="value">2015-12-08 00:00:00.0</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__area_42_1</property>
+            <property name="value">锡山</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__sewagename_43_2</property>
+            <property name="value">东湖塘</property>
+        </structure>
+        <structure>
+            <property name="name">time_37_3</property>
+            <property name="value">2015-12-08 00:00:00.0</property>
+        </structure>
+        <structure>
+            <property name="name">time_37_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">time_37_expr_</property>
+            <property name="value">dataSetRow["UpdataTime"]</property>
+        </structure>
+        <structure>
+            <property name="name">area_42_4</property>
+            <property name="value">9</property>
+        </structure>
+        <structure>
+            <property name="name">area_42_type_</property>
+            <property name="value">integer</property>
+        </structure>
+        <structure>
+            <property name="name">area_42_expr_</property>
+            <property name="value">row["areaID"]</property>
+        </structure>
+        <structure>
+            <property name="name">sewagename_43_5</property>
+            <property name="value">东湖塘</property>
+        </structure>
+        <structure>
+            <property name="name">sewagename_43_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">sewagename_43_expr_</property>
+            <property name="value">row["short_title"]</property>
+        </structure>
+    </list-property>
+</report>

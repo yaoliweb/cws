@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.21" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__year_9_0</property>
+            <property name="value">2014</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__month_10_1</property>
+            <property name="value">10</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__day_11_2</property>
+            <property name="value">13</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__area_80_3</property>
+            <property name="value">锡山</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__sewagename_81_4</property>
+            <property name="value">东北前</property>
+        </structure>
+        <structure>
+            <property name="name">area_80_5</property>
+            <property name="value">9</property>
+        </structure>
+        <structure>
+            <property name="name">area_80_type_</property>
+            <property name="value">integer</property>
+        </structure>
+        <structure>
+            <property name="name">area_80_expr_</property>
+            <property name="value">row["areaID"]</property>
+        </structure>
+        <structure>
+            <property name="name">month_10_6</property>
+            <property name="value">10</property>
+        </structure>
+        <structure>
+            <property name="name">month_10_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">year_9_7</property>
+            <property name="value">2014</property>
+        </structure>
+        <structure>
+            <property name="name">year_9_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">day_11_8</property>
+            <property name="value">13</property>
+        </structure>
+        <structure>
+            <property name="name">day_11_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">sewagename_81_9</property>
+            <property name="value">东北前</property>
+        </structure>
+        <structure>
+            <property name="name">sewagename_81_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">sewagename_81_expr_</property>
+            <property name="value">row["short_title"]</property>
+        </structure>
+    </list-property>
+</report>

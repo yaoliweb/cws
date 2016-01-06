@@ -1,0 +1,384 @@
+<%@ page language="java" contentType="text/html;charset=gb2312" %>
+<%@ taglib uri="http://java.sun.com/jsf/html" prefix="h"%>
+<%@ taglib uri="http://java.sun.com/jsf/core" prefix="f"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://richfaces.org/rich" prefix="rich"%>
+<%@ taglib uri="http://richfaces.org/a4j" prefix="a4j"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+	String str = "";
+	if (request.getParameter("sewagetitle") != null) {
+		str = new String(request.getParameter("sewagetitle").getBytes(
+				"ISO8859_1"));
+
+	} else {
+		str = "|";
+	}
+	session.setAttribute("str", str);
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/css/water.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<f:loadBundle basename="cn.zj.sunda.water.bundle.Messages_zh_CN"
+			var="msgs" />
+			
+			<style type="text/css">
+
+/* 表格基本样式 */
+table.default {
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 150px;
+	
+	position: relative;
+	left: 350px;
+	top: -45px;
+}
+table.showtime {
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 220px;
+	
+	position: relative;
+	left: 530px;
+	top: -190px;
+}
+table.showtitle {
+	border: 0px;
+	width: 220px;
+	position: relative;
+	left: 80px;
+	top: -210px;	
+	color=#009900;	
+}
+
+/* 表格单元格样式 */
+table.default td {
+	border: 1px solid black;
+	padding: 3px;
+}
+
+/* 列头样式 */
+table.default td.item {
+	background: #006699;
+	color: #fff;
+	text-align: center;
+	height: 25px;
+}
+</style>
+
+<script type="text/javascript">
+var xmlHttp; //用于保存XMLHttpRequest对象的全局变量
+var refreshTime = 1000 * 5; //自动刷新时间间隔，目前为5秒
+var isRefreshing = false; //是否处于自动刷新过程中
+
+//用于创建XMLHttpRequest对象
+function createXmlHttp() {
+	//根据window.XMLHttpRequest对象是否存在使用不同的创建方式
+	if (window.XMLHttpRequest) {
+		xmlHttp = new XMLHttpRequest(); //FireFox、Opera等浏览器支持的创建方式
+	} else {
+		xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");//IE浏览器支持的创建方式
+	}
+}
+
+//获取最新数据
+function getNewData() {
+	//如果已在刷新过程中，直接返回，取消操作
+	if (isRefreshing) {
+		return;
+	}
+	isRefreshing = true; //设置刷新状态为true
+	displayLoading(); //显示“正在加载……”
+	createXmlHttp(); //创建XMLHttpRequest对象
+	xmlHttp.onreadystatechange = writeData; //设置回调函数
+	xmlHttp.open("GET", "selectdata.jsp?" + new Date().getTime(), true); //发送GET请求
+	xmlHttp.send(null);
+}
+
+//将最新数据写入页面
+function writeData() {
+    if (xmlHttp.readyState == 4) {
+        isRefreshing = false;                       //获取成功，设置刷新状态为false
+        hiddenLoading();                            //隐藏“正在加载……”提示
+
+        //将获得的数据遍历写入页面
+        var result = eval("(" + xmlHttp.responseText + ")");
+        for (var o in result) {
+            document.getElementById(o).innerHTML = result[o];
+        }
+    }
+}
+
+//显示提示信息
+function displayLoading() {
+    document.getElementById("loading").style.visibility = "visible";
+}
+
+//隐藏提示信息
+function hiddenLoading() {
+    document.getElementById("loading").style.visibility = "hidden";
+}
+
+//初始化获取最新数据，并设置定时获取函数调用
+function init() {
+    getNewData();
+    setInterval("getNewData()", refreshTime);
+}
+</script>
+</head>
+	<f:view>
+		<title><h:outputText value="#{msgs.sewagecontrol}"></h:outputText>
+		</title>
+		<body onload="init()">
+			<center>
+				<h:form>
+					<table id="table1">
+						<tr>
+							<c:import url="/top.jsp"></c:import>
+						</tr>
+						<tr>
+							<h:panelGrid columns="2">
+								<f:subview id="menu">
+									<c:import url="/menu.jsp"></c:import>
+								</f:subview>
+								<f:subview id="functioncontentpage">
+									<rich:panel style="width:800px;height:30px;" id="equipmentState">
+										<f:facet name="header">
+											<h:panelGroup>
+												<table>
+													<tr>
+														<td>
+															<h:outputText value="#{msgs.sewageselect}"
+																styleClass="panel-title"></h:outputText>
+														</td>
+													</tr>
+												</table>
+											</h:panelGroup>
+										</f:facet>
+										<table>
+											<tr>
+												<td width="25%">
+													<table>
+														<tr>
+															<td>
+																<h:selectOneMenu value="#{sewageBean.areaSelectIndex}"
+																	style="width: 150px">
+																	<f:selectItems value="#{sewageBean.areaItem}" />
+																	<a4j:support event="onchange"
+																		action="#{sewageBean.valuechange_area}"
+																		reRender="sewage"></a4j:support>
+																</h:selectOneMenu>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<h:selectOneMenu id="sewage"
+																	value="#{sewageBean.sewageSelectIndex}"
+																	style="width: 150px">
+																	<f:selectItems value="#{sewageBean.sewageItem}" />
+																	<a4j:support event="onchange"
+																		action="#{sewageBean.valuechanged_sewage}"
+																		reRender="equipmentState, showcontent"></a4j:support>
+																</h:selectOneMenu>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td width="65%">
+													<table style="border: #000000; border-style: solid; border-width: 1px" align="left">
+														<tr>
+															<td align="center" style="border: 1px solid black">
+																<h:outputText value="#{msgs.air}" />
+															</td>
+															<td align="center" style="border: 1px solid black">
+																<h:outputText value="#{msgs.water}" />
+															</td>
+															<td align="center" style="border: 1px solid black">
+																<h:outputText value="#{msgs.mud}" />
+															</td>
+															<td align="center" style="border: 1px solid black">
+																<h:outputText value="#{msgs.flow}" />
+															</td>
+														</tr>
+														<tr>
+															<td align="center" style="border: 1px solid black" width="116">
+																<c:choose>
+																	<c:when test="${sewageBean.equipment1state=='3'}">
+																		<h:outputText value="#{msgs.eqpfault}" style="color: #FF0000"/>
+																	</c:when>
+																	<c:when test="${sewageBean.equipment1state=='4'}">
+																		<h:outputText value="#{msgs.uninstall}"/>
+																	</c:when> 
+																	<c:otherwise>
+																		<h:selectOneRadio value="#{sewageBean.equipment1state}">
+																		    <f:selectItem id="item11" itemValue="1" itemLabel="#{msgs.run}"/>
+																		    <f:selectItem id="item12" itemValue="2" itemLabel="#{msgs.stop}"/>
+																		</h:selectOneRadio>															
+																	</c:otherwise>
+																</c:choose>
+															</td>
+															<td align="center" style="border: 1px solid black" width="116">
+																<c:choose>
+																	<c:when test="${sewageBean.equipment2state=='3'}">
+																		<h:outputText value="#{msgs.eqpfault}" style="color: #FF0000"/>
+																	</c:when>
+																	<c:when test="${sewageBean.equipment2state=='4'}">
+																		<h:outputText value="#{msgs.uninstall}"/>
+																	</c:when> 
+																	<c:otherwise>
+																		<h:selectOneRadio value="#{sewageBean.equipment2state}">
+																		    <f:selectItem id="item21" itemValue="1" itemLabel="#{msgs.run}"/>
+																		    <f:selectItem id="item22" itemValue="2" itemLabel="#{msgs.stop}"/>
+																		</h:selectOneRadio>															
+																	</c:otherwise>
+																</c:choose>
+															</td>
+															<td align="center" style="border: 1px solid black" width="116">
+																<c:choose>
+																	<c:when test="${sewageBean.equipment3state=='3'}">
+																		<h:outputText value="#{msgs.eqpfault}" style="color: #FF0000"/>
+																	</c:when>
+																	<c:when test="${sewageBean.equipment3state=='4'}">
+																		<h:outputText value="#{msgs.uninstall}"/>
+																	</c:when> 
+																	<c:otherwise>
+																		<h:selectOneRadio value="#{sewageBean.equipment3state}">
+																		    <f:selectItem id="item31" itemValue="1" itemLabel="#{msgs.run}"/>
+																		    <f:selectItem id="item32" itemValue="2" itemLabel="#{msgs.stop}"/>
+																		</h:selectOneRadio>															
+																	</c:otherwise>
+																</c:choose>
+															</td>
+															<td align="center" style="border: 1px solid black" width="116">
+																<c:choose>
+																	<c:when test="${sewageBean.equipment4state=='3'}">
+																		<h:outputText value="#{msgs.eqpfault}" style="color: #FF0000"/>
+																	</c:when>
+																	<c:when test="${sewageBean.equipment4state=='4'}">
+																		<h:outputText value="#{msgs.uninstall}"/>
+																	</c:when> 
+																	<c:otherwise>
+																		<h:selectOneRadio value="#{sewageBean.equipment4state}">
+																		    <f:selectItem id="item41" itemValue="1" itemLabel="#{msgs.run}"/>
+																		    <f:selectItem id="item42" itemValue="2" itemLabel="#{msgs.stop}"/>
+																		</h:selectOneRadio>															
+																	</c:otherwise>
+																</c:choose>
+															</td>
+														</tr>														
+													</table>
+												</td>
+												<td align="center"> 
+													<h:commandButton value="#{msgs.submit}"
+														action="#{sewageBean.updateControlLog}" style="height: 25px; width: 40px">
+													</h:commandButton>
+												</td>	
+											</tr>
+										</table>
+									</rich:panel>
+
+									<rich:panel style="width:800px;height:480px;" id="showcontent">
+										<%
+											if ("|".equals(str)) {
+																	str = (String)session.getAttribute("sewageSelectName");
+																	if ((str == null)||(str.equals("请选择污水站"))) {
+																		str = "";
+																	}
+																}
+																session.setAttribute("str", str);
+										%>
+										<table background="<%=basePath%>images/map.jpg">
+											<tr height="454px">
+												<td width="770px">
+													<table class="default">
+														<tr>
+															<td style="color: #000000; background-color: #00ccff">
+																T
+															</td>
+															<td id="dataA"
+																style="font-family: Arial; font-size: 12px; color: #ffffff; background-color: #000000"></td>
+															<td style="color: #000000; background-color: #00ccff">
+																℃
+															</td>
+														</tr>													
+														<tr>
+															<td style="color: #000000; background-color: #00ccff">
+																PH
+															</td>
+															<td id="dataB"
+																style="font-family: Arial; font-size: 12px; color: #ffffff; background-color: #000000"></td>
+															<td style="color: #000000; background-color: #00ccff">
+																pH
+															</td>
+														</tr>
+														<tr>
+															<td style="color: #000000; background-color: #00ccff">
+																ORP
+															</td>
+															<td id="dataC"
+																style="font-family: Arial; font-size: 12px; color: #ffffff; background-color: #000000"></td>
+															<td style="color: #000000; background-color: #00ccff">
+																mV
+															</td>
+														</tr>
+														<tr>
+															<td style="color: #000000; background-color: #00ccff">
+																LS
+															</td>
+															<td id="dataD"
+																style="font-family: Arial; font-size: 12px; color: #ffffff; background-color: #000000"></td>
+															<td style="color: #000000; background-color: #00ccff">
+																m
+															</td>
+														</tr>
+														<tr>
+															<td style="color: #000000; background-color: #00ccff">
+																DO
+															</td>
+															<td id="dataE"
+																style="font-family: Arial; font-size: 12px; color: #ffffff; background-color: #000000"></td>
+															<td style="color: #000000; background-color: #00ccff">
+																mg/L
+															</td>
+														</tr>
+
+													</table>
+													<table class="showtitle">
+														<tr>
+															<td style="font-size: 36px; font-weight: bold;">
+																<%=str%>
+															</td>
+														</tr>
+													</table>
+													<table class="showtime">
+														<tr>
+															<td colspan="3">
+																最后更新时间：
+																<span id="lastUpdateTime"></span>
+															</td>
+														</tr>
+													</table>
+													<div id="loading"></div>
+												</td>
+											</tr>
+										</table>
+									</rich:panel>
+								</f:subview>
+							</h:panelGrid>
+						</tr>
+						<tr>
+							<c:import url="/foot.jsp"></c:import>
+						</tr>
+					</table>
+				</h:form>
+			</center>
+		</body>
+	</f:view>
+</html>

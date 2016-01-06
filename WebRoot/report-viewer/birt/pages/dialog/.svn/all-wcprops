@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/dialog
+END
+ParameterDialogFragment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/dialog/ParameterDialogFragment.jsp
+END
+DialogContainerFragment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/dialog/DialogContainerFragment.jsp
+END
+SimpleExportDataDialogFragment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/dialog/SimpleExportDataDialogFragment.jsp
+END
+ConfirmationDialogFragment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/dialog/ConfirmationDialogFragment.jsp
+END
+PrintReportDialogFragment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/dialog/PrintReportDialogFragment.jsp
+END
+ExportDataDialogFragment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/dialog/ExportDataDialogFragment.jsp
+END
+ExportReportDialogFragment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/dialog/ExportReportDialogFragment.jsp
+END
+ExceptionDialogFragment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/dialog/ExceptionDialogFragment.jsp
+END
+PrintReportServerDialogFragment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/project/!svn/ver/7/CWS/WebRoot/report-viewer/birt/pages/dialog/PrintReportServerDialogFragment.jsp
+END

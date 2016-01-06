@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/project/!svn/ver/11/CWS/WebRoot/WEB-INF
+END
+managed-beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/project/!svn/ver/122/CWS/WebRoot/WEB-INF/managed-beans.xml
+END
+navigations.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/project/!svn/ver/102/CWS/WebRoot/WEB-INF/navigations.xml
+END
+faces-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/project/!svn/ver/9/CWS/WebRoot/WEB-INF/faces-config.xml
+END
+spring.tld
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/project/!svn/ver/3/CWS/WebRoot/WEB-INF/spring.tld
+END
+spring-form.tld
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/project/!svn/ver/3/CWS/WebRoot/WEB-INF/spring-form.tld
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/project/!svn/ver/121/CWS/WebRoot/WEB-INF/applicationContext.xml
+END
+server-config.wsdd
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/project/!svn/ver/7/CWS/WebRoot/WEB-INF/server-config.wsdd
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/project/!svn/ver/75/CWS/WebRoot/WEB-INF/web.xml
+END

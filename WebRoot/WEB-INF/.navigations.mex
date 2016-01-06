@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSFFlowViewLayout version="1.0">
+  <Drawing gridVisible="true" snapOn="true" />
+  <JSFFlowResource path="/login.jsp" location="510,828" dimension="98,36" />
+  <JSFFlowResource path="/home.jsp" location="508,939" dimension="102,36" />
+  <JSFFlowResource path="/pages/User/usermanager.jsp" location="117,621" dimension="219,36" />
+  <JSFFlowResource path="/pages/User/useradd.jsp" location="0,747" dimension="190,36" />
+  <JSFFlowResource path="/pages/User/useredit.jsp" location="265,747" dimension="189,36" />
+  <JSFFlowResource path="/pages/User/rolemanager.jsp" location="615,621" dimension="217,36" />
+  <JSFFlowResource path="/pages/User/roleadd.jsp" location="499,747" dimension="188,36" />
+  <JSFFlowResource path="/pages/User/roleedit.jsp" location="762,747" dimension="187,36" />
+  <JSFFlowResource path="/pages/User/menumanager.jsp" location="121,414" dimension="226,36" />
+  <JSFFlowResource path="/pages/User/menuadd.jsp" location="0,540" dimension="197,36" />
+  <JSFFlowResource path="/pages/User/menuedit.jsp" location="272,540" dimension="196,36" />
+  <JSFFlowResource path="/pages/work/bugmanager.jsp" location="0,828" dimension="219,36" />
+  <JSFFlowResource path="/pages/work/bugedit.jsp" location="15,939" dimension="189,36" />
+  <JSFFlowResource path="/pages/work/buglist.jsp" location="272,828" dimension="183,36" />
+  <JSFFlowResource path="/pages/work/bugdetail.jsp" location="264,939" dimension="199,36" />
+  <JSFFlowResource path="/pages/setup/areamanager.jsp" location="633,414" dimension="225,36" />
+  <JSFFlowResource path="/pages/setup/areaadd.jsp" location="513,540" dimension="196,36" />
+  <JSFFlowResource path="/pages/setup/areaedit.jsp" location="784,540" dimension="195,36" />
+  <JSFFlowResource path="/pages/setup/adminmanager.jsp" location="672,207" dimension="235,36" />
+  <JSFFlowResource path="/pages/setup/adminadd.jsp" location="547,333" dimension="206,36" />
+  <JSFFlowResource path="/pages/setup/adminedit.jsp" location="828,333" dimension="205,36" />
+  <JSFFlowResource path="/pages/setup/sysparammanager.jsp" location="135,0" dimension="255,36" />
+  <JSFFlowResource path="/pages/setup/sysparamadd.jsp" location="0,126" dimension="226,36" />
+  <JSFFlowResource path="/pages/setup/sysparamedit.jsp" location="301,126" dimension="225,36" />
+  <JSFFlowResource path="/pages/setup/sewagemanager.jsp" location="129,207" dimension="243,36" />
+  <JSFFlowResource path="/pages/setup/sewageadd.jsp" location="0,333" dimension="214,36" />
+  <JSFFlowResource path="/pages/setup/sewageedit.jsp" location="289,333" dimension="213,36" />
+  <JSFFlowResource path="/pages/work/devicedoc.jsp" location="20,1020" dimension="203,36" />
+  <JSFFlowResource path="/pages/setup/devicedocadd.jsp" location="420,1020" dimension="229,36" />
+  <JSFFlowResource path="/pages/work/devicedrepairrecord.jsp" location="30,1130" dimension="263,36" />
+  <JSFFlowResource path="/pages/work/devicedrepairrecorddetial.jsp" location="480,1130" dimension="295,36" />
+  <JSFFlowResource path="/pages/setup/recorddetailadd.jsp" location="30,1230" dimension="241,36" />
+  <JSFFlowResource path="/pages/setup/devicedocedit.jsp" location="330,1230" dimension="228,36" />
+  <JSFFlowNavigationCase id="/login.jsp,/home.jsp,success,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="559,864" />
+      <AbsolutePoint location="559,939" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/User/usermanager.jsp,/pages/User/useradd.jsp,adduseraction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="124,657" />
+      <AbsolutePoint location="124,747" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/User/usermanager.jsp,/pages/User/useredit.jsp,edituseraction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="328,657" />
+      <AbsolutePoint location="328,747" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/User/useradd.jsp,/pages/User/usermanager.jsp,addusersuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="182,747" />
+      <AbsolutePoint location="182,657" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/User/useredit.jsp,/pages/User/usermanager.jsp,editusersuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="272,747" />
+      <AbsolutePoint location="272,657" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/User/rolemanager.jsp,/pages/User/roleadd.jsp,addroleaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="622,657" />
+      <AbsolutePoint location="622,747" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/User/rolemanager.jsp,/pages/User/roleedit.jsp,editroleaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="824,657" />
+      <AbsolutePoint location="824,747" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/User/roleadd.jsp,/pages/User/rolemanager.jsp,addrolesuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="679,747" />
+      <AbsolutePoint location="679,657" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/User/roleedit.jsp,/pages/User/rolemanager.jsp,editrolesuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="769,747" />
+      <AbsolutePoint location="769,657" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/User/menumanager.jsp,/pages/User/menuadd.jsp,addmenuaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="128,450" />
+      <AbsolutePoint location="128,540" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/User/menumanager.jsp,/pages/User/menuedit.jsp,editmenuaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="339,450" />
+      <AbsolutePoint location="339,540" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/User/menuadd.jsp,/pages/User/menumanager.jsp,addmenusuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="189,540" />
+      <AbsolutePoint location="189,450" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/User/menuedit.jsp,/pages/User/menumanager.jsp,editmenusuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="279,540" />
+      <AbsolutePoint location="279,450" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/work/bugmanager.jsp,/pages/work/bugedit.jsp,bugcontent,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="109,864" />
+      <AbsolutePoint location="109,939" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/work/bugedit.jsp,/pages/work/bugmanager.jsp,bugsavesuccess,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="124,939" />
+      <AbsolutePoint location="124,864" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/work/buglist.jsp,/pages/work/bugdetail.jsp,bugcontent,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="363,864" />
+      <AbsolutePoint location="363,939" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/areamanager.jsp,/pages/setup/areaadd.jsp,areaaddaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="640,450" />
+      <AbsolutePoint location="640,540" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/areamanager.jsp,/pages/setup/areaedit.jsp,areaeditaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="850,450" />
+      <AbsolutePoint location="850,540" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/areaadd.jsp,/pages/setup/areamanager.jsp,areaaddsuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="701,540" />
+      <AbsolutePoint location="701,450" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/areaedit.jsp,/pages/setup/areamanager.jsp,areaeditsuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="791,540" />
+      <AbsolutePoint location="791,450" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/adminmanager.jsp,/pages/setup/adminadd.jsp,adminaddaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="679,243" />
+      <AbsolutePoint location="679,333" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/adminmanager.jsp,/pages/setup/adminedit.jsp,admineditaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="899,243" />
+      <AbsolutePoint location="899,333" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/adminadd.jsp,/pages/setup/adminmanager.jsp,adminaddsuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="745,333" />
+      <AbsolutePoint location="745,243" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/adminedit.jsp,/pages/setup/adminmanager.jsp,admineditsuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="835,333" />
+      <AbsolutePoint location="835,243" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/sysparammanager.jsp,/pages/setup/sysparamadd.jsp,sysparamaddaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="142,36" />
+      <AbsolutePoint location="142,126" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/sysparammanager.jsp,/pages/setup/sysparamedit.jsp,sysparameditaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="382,36" />
+      <AbsolutePoint location="382,126" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/sysparamadd.jsp,/pages/setup/sysparammanager.jsp,sysparamaddsuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="218,126" />
+      <AbsolutePoint location="218,36" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/sysparamedit.jsp,/pages/setup/sysparammanager.jsp,sysparameditsuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="308,126" />
+      <AbsolutePoint location="308,36" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/sewagemanager.jsp,/pages/setup/sewageadd.jsp,sewageaddaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="136,243" />
+      <AbsolutePoint location="136,333" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/sewagemanager.jsp,/pages/setup/sewageedit.jsp,sewageeditaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="364,243" />
+      <AbsolutePoint location="364,333" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/sewageadd.jsp,/pages/setup/sewagemanager.jsp,sewageaddsuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="206,333" />
+      <AbsolutePoint location="206,243" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/sewageedit.jsp,/pages/setup/sewagemanager.jsp,sewageeditsuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="296,333" />
+      <AbsolutePoint location="296,243" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/work/devicedoc.jsp,/pages/setup/devicedocadd.jsp,devicedocaddaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="223,1023" />
+      <AbsolutePoint location="420,1023" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/work/devicedoc.jsp,/pages/work/devicedrepairrecord.jsp,repaircontent,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="106,1056" />
+      <AbsolutePoint location="106,1130" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/work/devicedoc.jsp,/pages/setup/devicedocedit.jsp,editdevicedoc,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="223,1053" />
+      <AbsolutePoint location="412,1053" />
+      <AbsolutePoint location="412,1230" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/devicedocadd.jsp,/pages/work/devicedoc.jsp,devicedocaddsuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="420,1038" />
+      <AbsolutePoint location="223,1038" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/work/devicedrepairrecord.jsp,/pages/work/devicedrepairrecorddetial.jsp,recorddetail,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="293,1148" />
+      <AbsolutePoint location="480,1148" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/recorddetailadd.jsp,/home.jsp,recorddetailaddaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="150,1248" />
+      <AbsolutePoint location="559,957" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/devicedocedit.jsp,/pages/work/devicedoc.jsp,devicedoceditsuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="444,1230" />
+      <AbsolutePoint location="444,1098" />
+      <AbsolutePoint location="121,1098" />
+      <AbsolutePoint location="121,1056" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/pages/setup/devicedocedit.jsp,/pages/work/devicedoc.jsp,devicedocdelsuccessaction,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="459,1230" />
+      <AbsolutePoint location="459,1068" />
+      <AbsolutePoint location="136,1068" />
+      <AbsolutePoint location="136,1056" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+</JSFFlowViewLayout>
+

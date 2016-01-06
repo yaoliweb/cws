@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/project/!svn/ver/119/CWS/WebRoot/pages/User
+END
+useredit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/project/!svn/ver/119/CWS/WebRoot/pages/User/useredit.jsp
+END
+roleedit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/project/!svn/ver/119/CWS/WebRoot/pages/User/roleedit.jsp
+END
+useradd.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/project/!svn/ver/119/CWS/WebRoot/pages/User/useradd.jsp
+END
+usermanager.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/project/!svn/ver/119/CWS/WebRoot/pages/User/usermanager.jsp
+END
+menuedit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/project/!svn/ver/119/CWS/WebRoot/pages/User/menuedit.jsp
+END
+roleadd.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/project/!svn/ver/119/CWS/WebRoot/pages/User/roleadd.jsp
+END
+rolemanager.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/project/!svn/ver/119/CWS/WebRoot/pages/User/rolemanager.jsp
+END
+menuadd.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/project/!svn/ver/119/CWS/WebRoot/pages/User/menuadd.jsp
+END
+menumanager.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/project/!svn/ver/119/CWS/WebRoot/pages/User/menumanager.jsp
+END

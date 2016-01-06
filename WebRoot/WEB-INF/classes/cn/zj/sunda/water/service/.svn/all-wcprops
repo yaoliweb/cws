@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/project/!svn/ver/68/CWS/src/cn/zj/sunda/water/service
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/project/!svn/ver/45/CWS/src/cn/zj/sunda/water/service/UserService.java
+END
+RunDataService.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/project/!svn/ver/53/CWS/src/cn/zj/sunda/water/service/RunDataService.java
+END
+SysparamService.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/project/!svn/ver/67/CWS/src/cn/zj/sunda/water/service/SysparamService.java
+END
+RoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/project/!svn/ver/8/CWS/src/cn/zj/sunda/water/service/RoleService.java
+END
+DayCollectService.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/project/!svn/ver/51/CWS/src/cn/zj/sunda/water/service/DayCollectService.java
+END
+MenuService.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/project/!svn/ver/8/CWS/src/cn/zj/sunda/water/service/MenuService.java
+END
+MessagesService.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/project/!svn/ver/67/CWS/src/cn/zj/sunda/water/service/MessagesService.java
+END
+AdminService.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/project/!svn/ver/67/CWS/src/cn/zj/sunda/water/service/AdminService.java
+END
+AreaService.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/project/!svn/ver/82/CWS/src/cn/zj/sunda/water/service/AreaService.java
+END
+DetectionDataService.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/project/!svn/ver/45/CWS/src/cn/zj/sunda/water/service/DetectionDataService.java
+END
+SewageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/project/!svn/ver/113/CWS/src/cn/zj/sunda/water/service/SewageService.java
+END
+BugService.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/project/!svn/ver/82/CWS/src/cn/zj/sunda/water/service/BugService.java
+END
