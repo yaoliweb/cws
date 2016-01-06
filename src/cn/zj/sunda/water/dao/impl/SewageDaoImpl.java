@@ -76,7 +76,7 @@ public class SewageDaoImpl extends HibernateDaoSupport implements SewageDao {
 	}
 	
 	public List<Sewage> queryAllSewageByShorttitle(String title) {
-		List<Sewage> list = this.getHibernateTemplate().find("from Sewage where shortTitle ='"+title+"'");
+		List<Sewage> list = this.getHibernateTemplate().find("from Sewage where shortTitle ='"+title+"' or operationnum = '"+title+"' ");
 		return list;
 	}
 
